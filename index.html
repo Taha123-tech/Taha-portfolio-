@@ -1,1 +1,298 @@
-index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Muhammad Taha - Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background-color: #0e0e0e;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #f5d142;
+      text-decoration: none;
+    }
+
+    header {
+      background-color: #111;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #f5d142;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 50px 20px;
+      background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+    }
+
+    .hero img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #f5d142;
+      margin-bottom: 20px;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      color: #f5d142;
+    }
+
+    .hero p {
+      max-width: 600px;
+      color: #bbb;
+      margin-top: 10px;
+    }
+
+    .section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section h3 {
+      font-size: 1.8rem;
+      color: #f5d142;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .about {
+      text-align: center;
+      color: #ccc;
+      font-size: 1.1rem;
+    }
+
+    .services, .contact {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 215, 0, 0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card h4 {
+      font-size: 1.3rem;
+      color: #f5d142;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 1rem;
+      color: #bbb;
+    }
+
+    .resume-section {
+      margin-bottom: 40px;
+    }
+
+    .resume-section h4 {
+      font-size: 1.5rem;
+      color: #f5d142;
+      margin-bottom: 15px;
+    }
+
+    .resume-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .resume-list li {
+      margin-bottom: 10px;
+      font-size: 1rem;
+      color: #bbb;
+    }
+
+    .timeline {
+      border-left: 3px solid #f5d142;
+      margin-left: 10px;
+      padding-left: 20px;
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 25px;
+    }
+
+    .timeline-item .circle {
+      position: absolute;
+      top: 4px;
+      left: -26px;
+      width: 14px;
+      height: 14px;
+      background-color: #f5d142;
+      border-radius: 50%;
+    }
+
+    .timeline-content {
+      color: #bbb;
+      font-size: 1rem;
+      padding-left: 10px;
+    }
+
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .hero h2 {
+        font-size: 1.5rem;
+      }
+
+      .section h3 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Muhammad Taha</h1>
+    <p>Graphic Designer & WordPress Developer</p>
+  </header>
+
+  <section class="hero">
+    <img src="https://i.ibb.co/NtMZyx7/taha.jpg" alt="Muhammad Taha" />
+    <h2>Hello, I'm Muhammad Taha</h2>
+    <p>I specialize in crafting stunning visuals and building WordPress websites that help brands grow. Let's make your digital presence strong and elegant.</p>
+  </section>
+
+  <section class="section about">
+    <h3>About Me</h3>
+    <p>I’m a passionate designer & WordPress developer with a knack for creating elegant, fast-loading, and fully responsive websites. I believe in clean visuals, strong branding, and results-driven web presence.</p>
+  </section>
+
+  <section class="section">
+    <h3>My Services</h3>
+    <div class="services">
+      <div class="card">
+        <h4>Graphic Design</h4>
+        <p>banners, brochures, social media posts, and more.</p>
+      </div>
+      <div class="card">
+        <h4>WordPress Development</h4>
+        <p>full-site builds, plugins, maintenance, and optimization.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ Resume Section Start -->
+  <section class="section resume">
+    <h3>Resume</h3>
+
+    <!-- What I Do -->
+    <div class="resume-section">
+      <h4>What I Do</h4>
+      <ul class="resume-list">
+        <li> WordPress websites for businesses and personal brands</li>
+        <li>Responsive websites/ Mobile-Friendly Layouts</li>
+        <li> E-commerce Website for Clothing Brand – Created full website with cart and checkout using WooCommerce</li>
+      </ul>
+    </div>
+
+    <!-- Experience -->
+    <div class="resume-section">
+      <h4>Experience</h4>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="circle"></span>
+          <div class="timeline-content">
+            <strong>WordPress Developer</strong> <br>
+            <small>Company: ADS Technology</small><br>
+            <small>Year: 2025</small>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <span class="circle"></span>
+          <div class="timeline-content">
+            <strong>Salesman</strong> <br>
+            <small>Company: ADS Technology</small><br>
+            <small>Year: 2025</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div class="resume-section">
+      <h4>Education</h4>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="circle"></span>
+          <div class="timeline-content">
+            <strong>Government National College</strong><br>
+            <small>Field: Pre-Engineering</small><br>
+            <small>Years: 2023 – 2025</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ✅ Resume Section End -->
+
+  <!-- ✅ Contact Section -->
+  <section class="section">
+    <h3>Contact Me</h3>
+    <div class="contact">
+      <div class="card">
+        <h4>Email</h4>
+        <p><a href="mailto:tahanoman2004@gmail.com">tahanoman2004@gmail.com</a></p>
+      </div>
+      <div class="card">
+        <h4>Phone</h4>
+        <p><a href="tel:+923248225504">0324-8225504</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Muhammad Taha. All rights reserved.
+  </footer>
+
+</body>
+</html>
